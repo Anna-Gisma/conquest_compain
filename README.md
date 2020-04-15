@@ -1,2 +1,2 @@
 # conquest_compain
-two kingdom battle
+two kingdoms battle
