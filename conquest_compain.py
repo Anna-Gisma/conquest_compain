@@ -52,4 +52,3 @@ def ConquestCampaign(N, M, L, battalion):
                      
     return(q)
 
-print(ConquestCampaign(3, 4, 2, [2,2, 3,4]))
