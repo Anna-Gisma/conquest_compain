@@ -46,11 +46,11 @@ def ConquestCampaign(N, M, L, battalion):
             for g in range(M):
                 if a[v][g] == 0:
                     h = True
+                    q += 1
                     break
                 else:
                     h = False
-        if h:
-            q += 1      
+             
                      
     return(q)
 
