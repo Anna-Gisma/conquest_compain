@@ -49,7 +49,7 @@ def ConquestCampaign(N, M, L, battalion):
                     break
                 else:
                     h = False
-        If h:
+        if h:
             q += 1      
                      
     return(q)
