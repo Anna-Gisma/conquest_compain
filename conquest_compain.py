@@ -1,10 +1,15 @@
 def ConquestCampaign(N, M, L, battalion):
     q = 1
-    h = True
+    h = False
     a = [[0]*M for i in range(N)]
     for j in range(0, (L*2), 2):
         a[battalion[j]-1][battalion[j+1]-1] = 1
-       
+        
+    for v in range(N):
+            for g in range(M):
+                if a[v][g] == 0:
+                    h = True
+                    break     
     while h:
         for i in range(N):
             for j in range(M):
@@ -46,11 +51,10 @@ def ConquestCampaign(N, M, L, battalion):
             for g in range(M):
                 if a[v][g] == 0:
                     h = True
-                    q += 1
                     break
                 else:
                     h = False
-             
-                     
+        q += 1
+          
     return(q)
 
