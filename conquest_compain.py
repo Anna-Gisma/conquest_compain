@@ -39,7 +39,8 @@ def ConquestCampaign(N, M, L, battalion):
                             a[k][l] += 1
                     else:
                         if a[k-1][l]>=2 or a[k+1][l]>=2 or a[k][l-1]>=2:
-                            a[k][l] += 1        
+                            a[k][l] += 1  
+      
                 
         for v in range(N):
             for g in range(M):
@@ -48,7 +49,8 @@ def ConquestCampaign(N, M, L, battalion):
                     break
                 else:
                     h = False
-        q += 1      
+        If h:
+            q += 1      
                      
     return(q)
 
